@@ -32,15 +32,15 @@
                         label = "NUMBER";
 // -----------------------------------------------------------------------------------------
 // | ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |  =  |
-// | TAB |     |     |     |     | BTC |   | LFT | DWN |  UP | RGT | CXT | PSC |
-// | SFT | BT1 | BT2 | BT3 | BT4 | BT5 |   | HOM | PGD | PGU | END |     | SFT |
+// | TAB |     |     | MLC | MRC | BTC |   | LFT | DWN |  UP | RGT | CXT | PSC |
+// | SFT | BT1 | BT2 | BT3 | BT4 | BT5 |   | MLF | MDN | MUP | MRT |     | SFT |
 //                   | GUI | CTR | ALT |   | SPC |  1  |  2  |
 //                   | GUI | DEL | INS |   | SPC | RET | BSP |
                         bindings = <
-   &kp ESC   &kp N1       &kp N2       &kp N3        &kp N4        &kp N5        &kp N6   &kp N7      &kp N8     &kp N9    &kp N0      &kp EQUAL
-   &kp TAB   &trans       &trans       &trans        &trans        &bt BT_CLR    &kp LEFT &kp DOWN    &kp UP     &kp RIGHT &kp K_CMENU &kp PSCRN
-   &kp LSHFT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp HOME &kp PG_DN   &kp PG_UP  &kp END   &trans      &kp RSHFT
-                                        &kp LGUI     &mt LCTRL DEL &mt LALT INS  &kp RET  &lt 1 SPACE &lt 2 BSPC
+   &kp ESC   &kp N1       &kp N2       &kp N3        &kp N4        &kp N5        &kp N6         &kp N7         &kp N8       &kp N9          &kp N0      &kp EQUAL
+   &kp TAB   &trans       &trans       &mkp LCLK     &mkp RCLK     &bt BT_CLR    &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT       &kp K_CMENU &kp PSCRN
+   &kp LSHFT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &trans      &kp RSHFT
+                                        &kp LGUI     &mt LCTRL DEL &mt LALT INS  &kp RET        &lt 1 SPACE    &lt 2 BSPC
                         >;
                 };
 
